@@ -13,6 +13,6 @@ export class MainPageComponent {
     power: 1000
   },{
     name: 'Goku',
-    power: 100000
+    power: 10000000
   }]
 }
