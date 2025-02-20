@@ -1,9 +1,11 @@
 
 <ul class="list-group">
-  <li class="list-group-item">Krillon - 500</li>
-  <li class="list-group-item">Goku - 1000</li>
   <li
   class="list-group-item"
-  *ngFor="let character of characterList">{{character.name}} - <strong>Power: {{character.power}}</strong> </li>
+  *ngFor="let character of characterList; let i = index">
+  <span class="text-primary"> {{i+1}}.  </span>
+  <span>{{character.name}}</span>
+   - <strong>Power: {{character.power}}</strong>
+  </li>
 </ul>
 
